@@ -13,6 +13,13 @@ fn main() {
         sign_in_count: 1,
     };
 
+    let mut user2: User = User {
+        active: true,
+        username: String::from("someusername456"),
+        email: String::from("someoneelse@example.com"),
+        sign_in_count: 1,
+    };
+
     user1.email = String::from("anotheremail@example.com");
 
     print!("{0}", user1.email)
